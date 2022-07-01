@@ -68,6 +68,7 @@ It guide is extremely beginner friendly. I wish i had it when i was starting out
     - Command - ``` bash /usr/local/bin/pfreboot.sh ```
     
     
+    
     3. Click on Save. 
 
 Now we are done. Now you can sleep peacefully. You dont have press the reset button when the internet is gone. It it will automatiatically reboot it self after sometime of going offline. 
