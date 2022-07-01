@@ -1,4 +1,5 @@
-# PfSense-Auto-Reboot 
+# PfSense Auto Reboot Script
+
 A simple script to reboot you pfsense box while there is not internet.
 
 It guide is extremely beginner friendly. I wish i had it when i was starting out.
