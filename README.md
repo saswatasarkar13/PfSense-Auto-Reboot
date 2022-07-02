@@ -51,22 +51,20 @@ It guide is extremely beginner friendly. I wish i had it when i was starting out
 
     1. Install cron if not installed already. 
 
-    System > Package Manager > Available Packages > Search "cron" > install.
+     System > Package Manager > Available Packages > Search "cron" > install.
 
     2. Configure the cron service.
 
-    Services > corn > add 
+     Services > corn > add 
     
-    Then type as follows
-    - Minute - *
-    - Hour - *
-    - Day of the month - *
-    - Month of the year - *
-    - Day of the week - *
-    - User -  root 
-    - Command - ``` bash /usr/local/bin/pfreboot.sh ```
-    
-    
+     Then type as follows
+      - Minute - *
+      - Hour - *
+      - Day of the month - *
+      - Month of the year - *
+      - Day of the week - *
+      - User -  root 
+      - Command - ``` bash /usr/local/bin/pfreboot.sh ``` 
     3. Click on Save. 
 
 Now we are done. Now you can sleep peacefully. You dont have press the reset button when the internet is gone. It it will automatiatically reboot it self after sometime of going offline. 
