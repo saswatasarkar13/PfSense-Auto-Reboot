@@ -1,7 +1,7 @@
 # PfSense-Auto-Reboot 
-A simple script to reboot you PfSense box while there is not connected to the internet.
+A simple script to reboot you PfSense box when it is not connected to the internet.
 
-It guide is extremely beginner friendly. I wish I had it when I was starting out.
+It guide is extremely beginner friendly. I wish I had it, When I was starting out.
 
 * Copy the script to the local pfsense router.
     
@@ -65,9 +65,10 @@ It guide is extremely beginner friendly. I wish I had it when I was starting out
       - Day of the week - *
       - User -  root 
       - Command - ``` bash /usr/local/bin/pfreboot.sh ``` 
+
     3. Click on Save. 
 
-Now we are done. You can sleep peacefully and dont have to press the reset button when the internet is gone/down. It will automatically reboot itself within sometime of going offline. 
+Now we are done. You can sleep peacefully and dont have to press the reset button when the internet is goes down. It will automatically reboot itself within sometime of going offline. 
         
 Feedback is always welcome.
 
