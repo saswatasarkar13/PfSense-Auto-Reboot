@@ -1,5 +1,5 @@
-# PfSense-Auto-Reboot 
-A simple script to reboot you PfSense box when it is not connected to the internet.
+# PfSense-Auto-Reboot (Tested on PfSense 2.6.0)
+A simple script to reboot you PfSnse box when it is not connected to the internet.
 
 It guide is extremely beginner friendly. I wish I had it, When I was starting out.
 
@@ -58,7 +58,7 @@ It guide is extremely beginner friendly. I wish I had it, When I was starting ou
      Services > corn > add 
     
      Then type as follows
-     
+
       - Minute - *
       - Hour - *
       - Day of the month - *
