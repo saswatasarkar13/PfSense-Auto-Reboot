@@ -58,6 +58,7 @@ It guide is extremely beginner friendly. I wish I had it, When I was starting ou
      Services > corn > add 
     
      Then type as follows
+     
       - Minute - *
       - Hour - *
       - Day of the month - *
