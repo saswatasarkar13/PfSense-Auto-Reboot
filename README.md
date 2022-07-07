@@ -1,11 +1,11 @@
 # PfSense-Auto-Reboot 
-A simple script to reboot you pfsense box while there is not internet.
+A simple script to reboot you PfSense box while there is not connected to the internet.
 
-It guide is extremely beginner friendly. I wish i had it when i was starting out.
+It guide is extremely beginner friendly. I wish I had it when I was starting out.
 
-* Copy the script of the local pfsense router.
+* Copy the script to the local pfsense router.
     
-    1. Copy the script from github. By clicking on the file and select raw. then copy the whole file.
+    1. Copy the script from Github. By clicking on the file and select raw. Then copy the whole file.
      
     2. Login via ssh using root user and password.
     
@@ -19,22 +19,22 @@ It guide is extremely beginner friendly. I wish i had it when i was starting out
     ```
     vi PfReboot.sh
     ```
-    6. Press ```i```. To got insert mode for VI editor.
+    6. Press ```i```. To get into insert mode for Vi editor.
 
-    7. Press ```Ctrl+Shift+V``` To Paste which you copied on the 1st step.
+    7. Press ```Ctrl+Shift+V``` To Paste the script which you copied on the 1st step.
 
     8. Change your wan adapter name, if required (mine is re0).
     
     9. (OPTONAL) Change the script to customize your experience.
-        - Change the public ip for cloudflare to your liking. and make it is a always on public ip and does respond to ping (ICMP).
-        - Uncomment it if you like to see a feedback on the console. By Default it is off.
+        - Change the public ip of cloudflare to your liking (public server). But make sure it is a always on public ip address and does respond to ping (ICMP).
+        - Uncomment the print lines. if you want to see feedback on the console. But by-default it is off.
 
     10. After Pasting the Script. Press ```ESC``` then ```:x``` to exit from the vi editor. 
 
 
-* To test the script on your local pfsense router.
+* To test the script on your local pfsense box.
 
-    1. Install bash if not installed already. 
+    1. Install bash, if not installed already. 
     ```     
     pkg install bash
     ```
@@ -42,14 +42,14 @@ It guide is extremely beginner friendly. I wish i had it when i was starting out
     ``` 
     chmod +x PfReboot.sh
     ```
-    3. Run it as "bash pfreboot.sh".
+    3. Run it as "bash PfReboot.sh".
     ```
-    bash pfreboot.sh
+    bash PfReboot.sh
     ```
 
-* To run the the script on your local pfsence router on schedule.
+* To run the the script on your local pfsence box on schedule.
 
-    1. Install cron if not installed already. 
+    1. Install cron, if not installed already. 
 
      System > Package Manager > Available Packages > Search "cron" > install.
 
@@ -67,7 +67,7 @@ It guide is extremely beginner friendly. I wish i had it when i was starting out
       - Command - ``` bash /usr/local/bin/pfreboot.sh ``` 
     3. Click on Save. 
 
-Now we are done. Now you can sleep peacefully. You dont have press the reset button when the internet is gone. It it will automatiatically reboot it self after sometime of going offline. 
+Now we are done. You can sleep peacefully and dont have to press the reset button when the internet is gone/down. It will automatically reboot itself within sometime of going offline. 
         
 Feedback is always welcome.
 
