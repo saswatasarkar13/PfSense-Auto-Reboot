@@ -66,7 +66,7 @@ This guide is extremely beginner friendly. I wish I had it, When I was starting 
       - Month of the year - *
       - Day of the week - *
       - User -  root 
-      - Command - ``` bash /usr/local/bin/Pfreboot.sh ``` 
+      - Command - ``` bash /usr/local/bin/PfReboot.sh ``` 
 
     3. Click on Save. 
 
