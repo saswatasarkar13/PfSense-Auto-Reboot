@@ -1,35 +1,36 @@
 # PfSense-Auto-Reboot (Tested on PfSense 2.6.0)
 A simple script to reboot you PfSnse box when it is not connected to the internet.
 
-It guide is extremely beginner friendly. I wish I had it, When I was starting out.
+This guide is extremely beginner friendly. I wish I had it, When I was starting out.
 
 * Copy the script to the local pfsense router.
     
-    1. Copy the script from Github. By clicking on the file and select raw. Then copy the whole file.
-     
-    2. Login via ssh using root user and password.
+    1. Login via ssh using root user and password.
     
-    3. Select shell command ```8```.
+    2. Select shell command ```8```.
 
-    4. Change your directory to /usr/local/bin.
+    3. Change your directory to /usr/local/bin.
     ```
     cd /usr/local/bin
     ```
-    5. Create the script file.
+    4. Download the script file.
     ```
-    vi PfReboot.sh
+    curl -LJO https://raw.githubusercontent.com/saswatasarkar13/PfSense-Auto-Reboot/main/PfReboot.sh
     ```
-    6. Press ```i```. To get into insert mode for Vi editor.
-
-    7. Press ```Ctrl+Shift+V``` To Paste the script which you copied on the 1st step.
-
-    8. Change your wan adapter name, if required (mine is re0).
-    
-    9. (OPTONAL) Change the script to customize your experience.
+    5. Install nano file editor
+    ```
+    pkg update
+    pkg install nano
+    ```
+    6. Change your wan adapter name, if required (mine is re0) using nano
+    ```
+    nano PfReboot.sh
+    ``` 
+    7. (OPTONAL) Change the script to customize your experience.
         - Change the public ip of cloudflare to your liking (public server). But make sure it is a always on public ip address and does respond to ping (ICMP).
         - Uncomment the print lines. if you want to see feedback on the console. But by-default it is off.
 
-    10. After Pasting the Script. Press ```ESC``` then ```:x``` to exit from the vi editor. 
+    8. After Pasting the Script. Press ```ESC``` then ```:x``` to exit from the vi editor. 
 
 
 * To test the script on your local pfsense box.
@@ -65,7 +66,7 @@ It guide is extremely beginner friendly. I wish I had it, When I was starting ou
       - Month of the year - *
       - Day of the week - *
       - User -  root 
-      - Command - ``` bash /usr/local/bin/pfreboot.sh ``` 
+      - Command - ``` bash /usr/local/bin/PfReboot.sh ``` 
 
     3. Click on Save. 
 
